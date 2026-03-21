@@ -1,4 +1,4 @@
-FROM openjdk:17-jdk-slim
+FROM openjdk:8-jdk-slim
 WORKDIR /app
 COPY target/JenkinsApp-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","app.jar"]
